@@ -1,4 +1,4 @@
-Play Online: http://sprodduturi.myweb.usf.edu/indexbee.html
+Play Online: [QuizApp](http://sprodduturi.myweb.usf.edu/indexbee.html)
 
 
 
