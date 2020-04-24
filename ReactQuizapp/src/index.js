@@ -1,6 +1,6 @@
-// file used by webpack build system to traverse the hirearchy of components
-import React, { Component } from "react"; // importing react library also importing component class bcoz we are building class component which is subclass of component
-import ReactDOM from "react-dom"; // will need this library to render the application on webpage
+
+import React, { Component } from "react"; 
+import ReactDOM from "react-dom"; 
 import "./assets/style.css";
 import QuestionBox from "./components/QuestionBox";
 import quizService from "./quizService";
@@ -8,8 +8,7 @@ import Result from "./components/result";
 
 // quizbee is a class which is root component
 class QuizBee extends Component {
-  //initiating the local state for this component with an array questionbank where 5 question wiill be stored once pulled from API
-  //state should be at the nearest parent
+  //initiating the local state for this component with an array questionbank where 5 question will be stored once pulled from API
   // the build system here uses bable compiler
   state = {
     questionBank: [],
@@ -42,7 +41,7 @@ class QuizBee extends Component {
       responses: 0
     });
   };
-  // to run the getquestions function we need componengtDeadMount function comes into picture
+
   componentDidMount() {
     this.getQuestions();
   }
@@ -71,5 +70,5 @@ class QuizBee extends Component {
     );
   }
 }
-// invoking render method from ReactDOM (library that we imported) in QuizBee component and a selector which is root where the component will render into in a html file in public folder where there is div with ID root
+
 ReactDOM.render(<QuizBee />, document.getElementById("root"));
